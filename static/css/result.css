@@ -1,0 +1,54 @@
+/* Fieldset and Legend Styles */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Stretch to full width */
+    border-collapse: collapse;
+    margin: 0 auto; /* Center table horizontally */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0; /* Lighter background for table header */
+    color: #000;
+}
+
+tr:hover {background-color: #e0e0e0;}
+
+/* Button Styles */
+button {
+    padding: 12px 20px; /* Reduced padding */
+    background-color: #c4302b; /* YouTube red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px; /* Smaller font size */
+    margin: 0 auto; /* Center the button horizontally */
+    display: block;  /* Make the button occupy full width on a new line */
+}
+
+button:hover {
+    background-color: #a02017; /* Darker red on hover */
+}

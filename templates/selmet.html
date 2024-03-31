@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Metrics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/selmet.css') }}">
+</head>
+<body>
+    <fieldset>
+        <legend>Select Metrics</legend>
+        <form action="/selmetreq" method="get">
+            <div>
+            {% for metric in Metrics %}
+                <input type="checkbox" name="metric[]" value="{{ metric }}">
+                <label for="{{ metric }}"> {{ metric }}</label><br>
+            {% endfor %}
+            <div>
+        <br>
+        <input type="submit"></input>
+        </form> 
+    </fieldset>
+</body>
+</html>

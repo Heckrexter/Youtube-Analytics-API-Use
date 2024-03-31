@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <table>
+        <caption>Users</caption>
+        <thead>
+            <tr>
+                <th>Channel</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in Users %}
+            <tr>
+                <td class="user-row">
+                    <a href="/acc?q={{ user.refresh_token }}">{{ user.channel_name }}</a>
+                    <a href="/logout?q={{ user.refresh_token }}">Delete</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <button><a id="oauth" href="/oauth">Add Channel</a></button>
+</body>
+</html>

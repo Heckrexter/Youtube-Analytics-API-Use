@@ -1,0 +1,56 @@
+/* Fieldset and Legend Styles */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Wrapper Div for Scrolling */
+.metrics-wrapper {
+    max-height: 300px; /* Adjust max height as needed */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    border: 1px solid #ddd; /* Optional border for the wrapper */
+    padding: 10px; /* Optional padding for the wrapper */
+    border-radius: 5px; /* Optional rounded corners for the wrapper */
+    margin-bottom: 20px; /* Maintain spacing after the wrapper */
+}
+
+/* Form Styles (within .metrics-wrapper) */
+form {
+    display: flex; /* Arrange elements horizontally */
+    flex-direction: column; /* Stack checkboxes vertically */
+}
+
+/* Checkbox Styles */
+input[type=checkbox] {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+label {
+    cursor: pointer; /* Indicate clickable element */
+}
+
+/* Submit Button Styles */
+input[type=submit] {
+    background-color: #c4302b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px; /* Smaller font size */
+}
+
+input[type=submit]:hover {
+    background-color: #a02017;
+}

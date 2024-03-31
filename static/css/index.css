@@ -1,0 +1,76 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+tr:hover {background-color: #e0e0e0;}
+
+a {
+    color: #c4302b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #a02017;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #c4302b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #a02017;
+}
+
+.user-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  a {
+    color: #c4302b;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #a02017;
+  }
+
+
+#oauth {
+    color: white;
+}
